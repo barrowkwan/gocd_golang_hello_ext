@@ -5,6 +5,8 @@ export GOPATH
 
 rm -rf $GOPATH/bin/*
 
+go get github.com/barrowkwan/gocd_golang_hello_ext
+
 go test -v github.com/barrowkwan/gocd_golang_hello_ext/country
 
 GOOS=darwin go build -o $GOPATH/bin/helloworld github.com/barrowkwan/gocd_golang_hello_ext
