@@ -5,6 +5,10 @@ export GOPATH
 
 rm -rf $GOPATH/bin/*
 
+# Get all dependencies
+echo "===================="
+echo "Get all Dependencies"
+echo "===================="
 go get -d -u github.com/golang/example/stringutil
 
 if [[ -f $GOPATH/bin/go-junit-report ]]; then
