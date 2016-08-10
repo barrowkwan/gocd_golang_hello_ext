@@ -5,7 +5,7 @@ export GOPATH
 
 rm -rf $GOPATH/bin/*
 
-go get github.com/barrowkwan/gocd_golang_hello_ext
+go get -d github.com/barrowkwan/gocd_golang_hello_ext
 
 if [[ -f $GOPATH/bin/go-junit-report ]]; then
   echo "Remove binary : $GOPATH/bin/go-junit-report"
